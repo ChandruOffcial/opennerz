@@ -1,0 +1,430 @@
+/* SayHelloModal.css */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 32rem;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.dark .modal-container {
+  background-color: #111827;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #6b7280;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: #ef4444;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-form label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  border-color: #3b82f6;
+}
+
+.modal-submit {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.faq-accordion {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.faq-item + .faq-item {
+  border-top: 1px solid #ddd;
+}
+
+.faq-question {
+  background-color: transparent;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background-color: transparent;
+}
+
+.faq-question h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.faq-answer.open {
+  padding: 15px 20px;
+  max-height: 500px;
+}
+
+.faq-answer p {
+  margin: 0;
+  color: #444;
+}
+
+.modal-submit:hover {
+  background-color: #1e40af;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Floating Button */
+.lets-talk-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #4f46e5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.lets-talk-button:hover {
+  background-color: #4338ca;
+}
+
+/* Modal Overlay */
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  padding: 20px;
+}
+
+/* Modal Box */
+.custom-modal {
+  background-color: #ffffff;
+  border-radius: 30px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.3s ease;
+}
+
+.custom-modal-container {
+  min-height: 400px;
+}
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Modal Header */
+.custom-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.custom-modal-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+
+.close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Form Style */
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 25px;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+input,
+textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: border 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4f46e5;
+  outline: none;
+}
+
+/* Buttons */
+.custom-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.send-btn {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #f3f4f6;
+  color: #111827;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .custom-modal {
+    padding: 16px;
+  }
+
+  .lets-talk-button {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .send-btn,
+  .cancel-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+.gas {
+  --blur: 1.75rem;
+  --box-blur: calc(0.5 * var(--blur));
+  --glow: var(--color);
+
+  align-items: center;
+  border-radius: 12px;
+  border: 4px solid currentColor;
+  box-shadow: 
+    /* --- "glass" tube --- */
+    /* inside */ inset 0 0 0 2px
+      rgba(0, 0, 0, 0.15),
+    /* outside */ 0 0 0 2px rgba(0, 0, 0, 0.15),
+    /* --- glow --- */ /* inside */ inset 0 0 var(--box-blur) var(--glow),
+    /* outside */ 0 0 var(--box-blur) var(--glow);
+
+  &.xe {
+    --color: #c4c4c6;
+    filter: brightness(105%);
+  }
+}
+.cancel-btn {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-btn:hover {
+  background-color: darkred;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.send-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.custom-modal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.content__left {
+  width: 50%;
+  padding: 30px;
+  background-color: #1c1e1f; /* Background color*/
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.content__right {
+  border-radius: 0px 20px 20px 0px;
+  width: 50%;
+  padding: 20px;
+  background-color: #343538; /* Background color*/
+}
+.message {
+  height: 200px;
+  width: 200px;
+}
+
+.content_h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 900;
+}
+.content_p {
+  font-size: 16px;
+  color: #ebe5e5;
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: #111827;
+  border: none;
+  color: rgb(254, 254, 254);
+  resize: none;
+}
+
+.form-group label {
+  color: rgb(248, 237, 237);
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .custom-modal {
+    padding: 0px;
+  }
+  .content__left {
+    display: none;
+  }
+  .content__right {
+    width: 100%;
+    padding: 0px;
+  }
+}

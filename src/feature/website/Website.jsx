@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { SvgLib } from "./components/SvgLib";
 import Navigation from "./components/Navigation";
-import PopupVideo from "./components/PopupVideo";
 import Home from "./components/Home";
+import Services from "./components/OurMissionSection";
 import AboutUsSection from "./components/AboutUs";
-import OurMissionSection from "./components/OurMissionSection";
 import OurVisionSection from "./components/OurVisionSection";
 import OurServices from "./components/OurServices";
 import { Toaster, toast } from "react-hot-toast";
+import PricingSection from "./components/PricingCard";
 
 const Website = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -17,8 +17,9 @@ const Website = () => {
       <SvgLib />
       <Navigation />
       <Home />
-      <OurMissionSection />
-      <AboutUsSection />
+      <Services />
+      <PricingSection openModal={() => setOpenModal(true)} />
+      {/* <AboutUsSection /> */}
       <OurServices />
       <OurVisionSection />
 

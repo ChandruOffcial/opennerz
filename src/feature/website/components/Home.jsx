@@ -32,7 +32,7 @@ const Home = () => {
 
   return (
     <>
-      <Section sectionNo={sectionNo} url={bgUrl}>
+      <Section sectionNo={sectionNo} url={bgUrl} id="home">
         <div className="fix-8-12 noSelect">
           <div className="relative ae-5">
             <SliderControls
@@ -59,7 +59,7 @@ const Home = () => {
             {/* <img src="/assets/img/logo.png" height={"70px"} /> */}
 
             {/* <img src="/assets/img/logo-dark.png" height={"70px"} /> */}
-            <img src="/assets/img/logo-light.png" height={"70px"} />
+            <img src="/assets/img/logo-01.svg" height={"70px"} />
           </div>
 
           <div className="fix-7-12 margin-top-2">

@@ -29,7 +29,7 @@ import FAQAccordion from "./FAQ";
 
 const OurServices = () => {
   return (
-    <Section url="assets/img/background/img-89.jpg" sectionNo={"5"}>
+    <Section url="assets/img/background/img-89.jpg" sectionNo={"5"} id={"faq"}>
       <div className="fix-9-12 toCenter">
         <h1 className="ae-1">Frequently Asked Questions</h1>
         <p className="ae-2">
@@ -56,91 +56,6 @@ const OurServices = () => {
             </li>
           ))}
         </ul> */}
-
-        <nav className="panel bottom lastSlideOnly">
-          <div className="sections desktop">
-            {/* <div className="left">
-              <a href="#" className="button hollow">
-                <img src="assets/img/appstore.jpg" width={112} height={42} />
-              </a>
-            </div>
-            <div className="center">
-              <ul className="menu uppercase">
-                <li>
-                  <a href="#">Tour</a>
-                </li>
-                <li>
-                  <a href="#">Upgrade</a>
-                </li>
-                <li>
-                  <a href="#">Help</a>
-                </li>
-                <li>
-                  <a href="#">Explore</a>
-                </li>
-              </ul>
-            </div> */}
-            <div className="center">
-              <ul className="menu crop">
-                <li>
-                  <a href="http://facebook.com/designmodo" target="_blank">
-                    <svg>
-                      <use
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                        xlinkHref="#facebook"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="http://twitter.com/designmodo" target="_blank">
-                    <svg>
-                      <use
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                        xlinkHref="#twitter"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="http://instagram.com/designmodo" target="_blank">
-                    <svg>
-                      <use
-                        xmlnsXlink="http://www.w3.org/1999/xlink"
-                        xlinkHref="#instagram"
-                      />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="sections compact hidden">
-            <div className="left">
-              <a href="#" title="Slides Framework">
-                <svg style={{ width: 82, height: 24 }}>
-                  <use
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    xlinkHref="#logo"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div className="right">
-              <span
-                className="button actionButton sidebarTrigger"
-                data-sidebar-id={1}
-              >
-                <svg>
-                  <use
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    xlinkHref="#menu"
-                  />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </nav>
       </div>
     </Section>
   );

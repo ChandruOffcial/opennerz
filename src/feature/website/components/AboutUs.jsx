@@ -31,7 +31,7 @@ const aboutDetails = {
 };
 const AboutUsSection = () => {
   return (
-    <Section sectionNo="2" url="assets/img/background/img-73.jpg">
+    <Section sectionNo="2" url="assets/img/background/img-73.jpg" id="about">
       <div className="fix-11-12">
         <ul className="flex reverse">
           <li className="col-6-12 left box-73">

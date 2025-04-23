@@ -29,7 +29,7 @@ const features = [
 
 const OurVisionSection = () => {
   return (
-    <Section sectionNo="4" url="assets/img/background/img-89.jpg">
+    <Section sectionNo="4" url="assets/img/background/img-89.jpg" id={"about"}>
       <div className="fix-12-12">
         <ul className="flex left">
           {/* Text Content */}
@@ -75,6 +75,65 @@ const OurVisionSection = () => {
           </li>
         </ul>
       </div>
+      <nav className="panel bottom lastSlideOnly">
+        <div className="sections desktop">
+          <div className="left">
+            <p className="tiny opacity-6">
+              G4, Saxton the avenue, Leeds, LS9 8FR Contact 07469648517
+            </p>
+          </div>
+          <div className="center">
+            <ul className="menu uppercase">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#pricing">Pricing</a>
+              </li>
+              <li>
+                <a href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div className="center">
+            <ul className="menu crop">
+              <li>
+                <a href="http://facebook.com/designmodo" target="_blank">
+                  <svg>
+                    <use
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                      xlinkHref="#facebook"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="http://twitter.com/designmodo" target="_blank">
+                  <svg>
+                    <use
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                      xlinkHref="#twitter"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="http://instagram.com/designmodo" target="_blank">
+                  <svg>
+                    <use
+                      xmlnsXlink="http://www.w3.org/1999/xlink"
+                      xlinkHref="#instagram"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </Section>
   );
 };

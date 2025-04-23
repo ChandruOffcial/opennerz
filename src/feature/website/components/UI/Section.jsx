@@ -1,6 +1,6 @@
-const Section = ({ sectionNo, url, children }) => {
+const Section = ({ url, children, id }) => {
   return (
-    <section className="slide fade-6 kenBurns">
+    <section className="slide fade-6 kenBurns" id={id}>
       <div className="content">
         <div className="container">
           <div className="wrap">{children}</div>

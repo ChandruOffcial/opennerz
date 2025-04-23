@@ -81,7 +81,7 @@ const slides = [
   },
 ];
 
-const AUTO_SLIDE_INTERVAL = 5000;
+const AUTO_SLIDE_INTERVAL = 10000;
 
 const OurMissionSection = () => {
   const [current, setCurrent] = useState(0);
@@ -116,7 +116,7 @@ const OurMissionSection = () => {
   }
 
   return (
-    <Section sectionNo="3" url="assets/img/background/img-27.jpg">
+    <Section sectionNo="3" url="assets/img/background/img-27.jpg" id="services">
       <div className="fix-12-12">
         <ul className="flex verticalCenter">
           {/* Left: Thumbnails and dots */}
@@ -128,15 +128,12 @@ const OurMissionSection = () => {
 
           <li className="col-5-12 cell-27">
             <div className="fix-4-12">
-              <ul
-                className="slider clickable ae-1 fromAbove"
-                data-slider-id="27-3"
-              >
+              <ul className="slider ae-1 fromAbove" data-slider-id="27-3">
                 {slides.map((slide, idx) => (
                   <li
                     key={idx}
                     className={idx === current ? "selected" : ""}
-                    onClick={() => handleManualSelect(idx)}
+                    // onClick={() => handleManualSelect(idx)}
                     style={{ cursor: "pointer" }}
                   >
                     <img src={slide.img} alt={slide.heading} />

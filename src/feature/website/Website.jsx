@@ -19,7 +19,6 @@ const Website = () => {
       <Home />
       <Services />
       <PricingSection openModal={() => setOpenModal(true)} />
-      {/* <AboutUsSection /> */}
       <OurServices />
       <OurVisionSection />
 

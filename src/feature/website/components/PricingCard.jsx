@@ -35,7 +35,6 @@ const pricingPlans = [
     details: [
       "Social Media Setup",
       "1-Month Content Plan",
-
       "Google Ads Setup (additional charge)",
     ],
     buttonLabel: "Purchase",
